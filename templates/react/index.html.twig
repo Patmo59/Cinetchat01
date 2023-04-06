@@ -7,29 +7,62 @@
 	<div class="bg-gray-500">
 		<div class="bg-amber-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
 			<div class="text-center">
-				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Ceci est une démo de React dans une application Symfony</p>
+				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+					1 Ceci est une démo de React dans une application Symfony</p>
 				<p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">démo de React dans une application Symfony</p>
-                
-            <div {{react_component('MyComponent', {'fullName':'Patrick'}) }}></div>
+				<div {{react_component('MyComponent', {'fullName':'Patrick'} ) }}></div>
+			</div>
 		</div>
-	</div>
-	<div class="bg-gray-500">
-		<div class="bg-green-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
-			<div class="text-center">
-				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Ceci est une démo de React dans une application Symfony</p>
-				<p class="mx-auto mt-5 max-w-xl text-xl text-yellow-500">c'est une liste dans Symfony
-                </p>
-                
-            <div {{react_component('ListController', {'fullName':'Patrick'}) }}>
-            {# <div {{react_component('MyComponent', {'fullName':'Patrick'}) }}> #}
-            </div>
+		{# ========================== #}
+		<br/>
+
+		<div class="bg-gray-500">
+			<div class="bg-green-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
+				<div class="text-center">
+					<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+						2 Ceci est une démo de React dans une application Symfony</p>
+					<p class="mx-auto mt-5 max-w-xl text-xl text-yellow-500">c'est une liste dans Symfony
+					</p>
+					<div {{react_component('ListController', {'fullName':'Patrick'} ) }}></div>
+				</div>
+			</div>
 		</div>
-	</div>
-    <div class="bg-amber-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
+		{# ========================== #}
+		<br/>
+		<div class="bg-amber-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
 			<div class="text-center">
-				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Ceci est une démo de React dans une application Symfony</p>
+				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+					3 Ceci est une démo de React dans une application Symfony</p>
 				<p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">démo de React dans une application Symfony</p>
-                
-            <div {{react_component('MyComponent', {'fullName':'Patrick'}) }}></div>
+				<div {{react_component('MyComponent', {'fullName':'Patrick'} ) }}></div>
+			</div>
+
+
+			<div class="bg-gray-500">
+				<div class="bg-yellow-200 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
+					<div class="text-center">
+						<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+							4 Ceci est une démo de React dans une application Symfony</p>
+						<p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">démo de React dans une application Symfony</p>
+
+						<div {{react_component('Modal', {'button':'{Patrick}'} ) }}></div>
+					</div>
+				</div>
+			</div>
+			<br/>
+			{# ============ #}
+			<div class="bg-blue-700 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-solid border rounded ">
+				<div class="text-center">
+					<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+						5 Ceci est une démo de React dans une application Symfony</p>
+					<p class="mx-auto mt-5 max-w-xl text-xl text-gray-900">démo de React dans une application Symfony</p>
+
+					<div {{react_component('MyComponent', {'fullName':'Patrick'} ) }}></div>
+				</div>
+			</div>
 		</div>
+
+		{# ============ #}
+
+	</div>
 {% endblock %}
